@@ -22,10 +22,10 @@ public class File_Input_Output {
 		FileInputStream fi = new FileInputStream("D:\\Testing From .XLSX\\Test File_1.xlsx");
 		Workbook wb = new XSSFWorkbook(fi);
 		
-		Sheet ws = wb.getSheet("EmpData");
+		Sheet ws = wb.getSheet("EmpData");// Sheet Name
 		Row row = ws.getRow(1);
 		Cell cell = row.createCell(4);
-		cell.setCellValue("Pass");
+		cell.setCellValue("Pass");// Write Data
 		
 		CellStyle style = wb.createCellStyle();
 		style.setFillForegroundColor(IndexedColors.BRIGHT_GREEN1.getIndex());
